@@ -1,0 +1,3954 @@
+{
+ "note": "Extension non validée: nouveaux médicaments, organes et fiches. Tout est « a_valider ».",
+ "medicaments": [
+  {
+   "id": "naproxene",
+   "nom": "Naproxène",
+   "emoji": "🔶",
+   "classe": "Anti-inflammatoire non stéroïdien (AINS)"
+  },
+  {
+   "id": "dimenhydrinate",
+   "nom": "Dimenhydrinate",
+   "emoji": "🚗",
+   "classe": "Antihistaminique H1 / antiémétique"
+  },
+  {
+   "id": "decongestionnants",
+   "nom": "Décongestionnants (pseudoéphédrine, phényléphrine)",
+   "emoji": "👃",
+   "classe": "Décongestionnant (agoniste alpha-adrénergique)"
+  },
+  {
+   "id": "dextromethorphane",
+   "nom": "Dextrométhorphane",
+   "emoji": "🗣️",
+   "classe": "Antitussif (action centrale)"
+  },
+  {
+   "id": "laxatif_stimulant",
+   "nom": "Laxatifs stimulants (bisacodyl, séné)",
+   "emoji": "⚡",
+   "classe": "Laxatif stimulant"
+  },
+  {
+   "id": "peg",
+   "nom": "Polyéthylène glycol (PEG)",
+   "emoji": "💦",
+   "classe": "Laxatif osmotique"
+  },
+  {
+   "id": "simethicone",
+   "nom": "Siméthicone",
+   "emoji": "🫧",
+   "classe": "Antiflatulent"
+  },
+  {
+   "id": "sro",
+   "nom": "Solutions de réhydratation orale",
+   "emoji": "🥤",
+   "classe": "Réhydratation (glucose + sels)"
+  }
+ ],
+ "organes": [
+  {
+   "id": "coeur",
+   "nom": "Cœur et vaisseaux",
+   "emoji": "❤️"
+  },
+  {
+   "id": "yeux",
+   "nom": "Yeux",
+   "emoji": "👁️"
+  },
+  {
+   "id": "muscles",
+   "nom": "Muscles et articulations",
+   "emoji": "💪"
+  },
+  {
+   "id": "urinaire",
+   "nom": "Système urinaire (vessie)",
+   "emoji": "🚽"
+  },
+  {
+   "id": "sang",
+   "nom": "Sang (plaquettes)",
+   "emoji": "🩸"
+  }
+ ],
+ "combinaisons": [
+  {
+   "id": "naproxene-estomac",
+   "type": "medicament_organe",
+   "elements": [
+    "naproxene",
+    "estomac"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Peut irriter l'estomac et augmenter le risque d'ulcère et de saignement digestif.",
+   "mecanisme": "Inhibe la COX-1, ce qui réduit les prostaglandines qui protègent la muqueuse gastrique.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-foie",
+   "type": "medicament_organe",
+   "elements": [
+    "naproxene",
+    "foie"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Atteinte du foie rare.",
+   "mecanisme": "Peut rarement élever les enzymes du foie ou causer une atteinte hépatique.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-reins",
+   "type": "medicament_organe",
+   "elements": [
+    "naproxene",
+    "reins"
+   ],
+   "categorie_resultat": "risque",
+   "resultat": "Peut diminuer la circulation du sang dans les reins et nuire à leur fonction, surtout en cas de déshydratation.",
+   "mecanisme": "Les prostaglandines gardent dilatés les petits vaisseaux des reins; les inhiber réduit la filtration.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-cerveau",
+   "type": "medicament_organe",
+   "elements": [
+    "naproxene",
+    "cerveau"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Soulage la douleur et la fièvre.",
+   "mecanisme": "Réduit les prostaglandines qui sensibilisent les nerfs de la douleur et élèvent le centre de la température.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-immunitaire",
+   "type": "medicament_organe",
+   "elements": [
+    "naproxene",
+    "immunitaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Réduit l'inflammation sans stimuler ni supprimer nettement les défenses immunitaires.",
+   "mecanisme": "Bloque la fabrication de prostaglandines inflammatoires; ce n'est pas un immunosuppresseur.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-intestins",
+   "type": "medicament_organe",
+   "elements": [
+    "naproxene",
+    "intestins"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Peut irriter le tube digestif (crampes, diarrhée ou constipation, saignement).",
+   "mecanisme": "Perte de la protection des prostaglandines sur la muqueuse digestive.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-voies_resp",
+   "type": "medicament_organe",
+   "elements": [
+    "naproxene",
+    "voies_resp"
+   ],
+   "categorie_resultat": "risque",
+   "resultat": "Peut déclencher une crise d'asthme chez les personnes sensibles aux AINS.",
+   "mecanisme": "L'inhibition des COX détourne la production vers des leucotriènes qui resserrent les bronches.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-peau",
+   "type": "medicament_organe",
+   "elements": [
+    "naproxene",
+    "peau"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Éruptions cutanées et sensibilité au soleil possibles.",
+   "mecanisme": "Réaction allergique ou photosensibilité, rarement.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "naproxene",
+    "coeur"
+   ],
+   "categorie_resultat": "risque",
+   "resultat": "Peut faire monter la pression artérielle et retenir l'eau; risque cardiovasculaire accru chez certaines personnes.",
+   "mecanisme": "Moins de prostaglandines vasodilatatrices et rétention de sel et d'eau par les reins.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "naproxene",
+    "yeux"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Pas d'action directe reconnue sur l'œil.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "naproxene",
+    "muscles"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Soulage la douleur et l'inflammation des muscles et des articulations.",
+   "mecanisme": "Réduit les prostaglandines produites dans les tissus enflammés.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "naproxene",
+    "urinaire"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Peut causer de la rétention d'eau et affecter la production d'urine par ses effets sur les reins.",
+   "mecanisme": "Effet indirect, lié à la baisse des prostaglandines rénales.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "naproxene",
+    "sang"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Diminue la capacité des plaquettes à s'agglutiner et augmente le risque de saignement.",
+   "mecanisme": "Inhibe la COX-1 plaquettaire de façon réversible.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-estomac",
+   "type": "medicament_organe",
+   "elements": [
+    "dimenhydrinate",
+    "estomac"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Calme les nausées sans agir directement sur l'estomac.",
+   "mecanisme": "Agit sur le centre du vomissement et l'oreille interne, pas sur l'estomac.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-foie",
+   "type": "medicament_organe",
+   "elements": [
+    "dimenhydrinate",
+    "foie"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Métabolisé en partie par le foie; pas d'atteinte hépatique courante.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-reins",
+   "type": "medicament_organe",
+   "elements": [
+    "dimenhydrinate",
+    "reins"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Éliminé en partie par les reins; pas d'effet toxique courant.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-cerveau",
+   "type": "medicament_organe",
+   "elements": [
+    "dimenhydrinate",
+    "cerveau"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Prévient et soulage nausées et vomissements du mal des transports; cause souvent de la somnolence.",
+   "mecanisme": "Bloque les récepteurs H1 et muscariniques dans l'oreille interne et le centre du vomissement.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-immunitaire",
+   "type": "medicament_organe",
+   "elements": [
+    "dimenhydrinate",
+    "immunitaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Bloque l'histamine, mais n'agit pas sur les défenses immunitaires.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-intestins",
+   "type": "medicament_organe",
+   "elements": [
+    "dimenhydrinate",
+    "intestins"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Peut causer de la constipation.",
+   "mecanisme": "Effet anticholinergique qui ralentit les mouvements de l'intestin.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-voies_resp",
+   "type": "medicament_organe",
+   "elements": [
+    "dimenhydrinate",
+    "voies_resp"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Peut assécher les sécrétions du nez et de la gorge.",
+   "mecanisme": "Effet anticholinergique.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-peau",
+   "type": "medicament_organe",
+   "elements": [
+    "dimenhydrinate",
+    "peau"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe sur la peau.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "dimenhydrinate",
+    "coeur"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Peut accélérer la fréquence cardiaque.",
+   "mecanisme": "Effet anticholinergique (blocage du nerf vague).",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "dimenhydrinate",
+    "yeux"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Peut causer vision floue et sécheresse; prudence en cas de glaucome à angle fermé.",
+   "mecanisme": "Effet anticholinergique: dilatation de la pupille et moins de larmes.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "dimenhydrinate",
+    "muscles"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "dimenhydrinate",
+    "urinaire"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Peut causer de la difficulté à uriner, surtout en cas de problème de prostate.",
+   "mecanisme": "Effet anticholinergique sur la vessie.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "dimenhydrinate",
+    "sang"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action reconnue sur les cellules du sang.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-estomac",
+   "type": "medicament_organe",
+   "elements": [
+    "decongestionnants",
+    "estomac"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe reconnue.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-foie",
+   "type": "medicament_organe",
+   "elements": [
+    "decongestionnants",
+    "foie"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'atteinte hépatique courante.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-reins",
+   "type": "medicament_organe",
+   "elements": [
+    "decongestionnants",
+    "reins"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Éliminés surtout par les reins; pas d'effet toxique courant.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-cerveau",
+   "type": "medicament_organe",
+   "elements": [
+    "decongestionnants",
+    "cerveau"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Peut causer nervosité, insomnie ou maux de tête.",
+   "mecanisme": "Effet stimulant de type adrénergique.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-immunitaire",
+   "type": "medicament_organe",
+   "elements": [
+    "decongestionnants",
+    "immunitaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Soulagent la congestion mais ne traitent pas l'infection ou l'allergie.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-intestins",
+   "type": "medicament_organe",
+   "elements": [
+    "decongestionnants",
+    "intestins"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe reconnue.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-voies_resp",
+   "type": "medicament_organe",
+   "elements": [
+    "decongestionnants",
+    "voies_resp"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Réduisent la congestion nasale.",
+   "mecanisme": "Stimulent les récepteurs alpha-adrénergiques et resserrent les vaisseaux de la muqueuse du nez, qui désenfle.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-peau",
+   "type": "medicament_organe",
+   "elements": [
+    "decongestionnants",
+    "peau"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "decongestionnants",
+    "coeur"
+   ],
+   "categorie_resultat": "risque",
+   "resultat": "Peuvent accélérer le cœur et faire monter la pression artérielle.",
+   "mecanisme": "Vasoconstriction et stimulation adrénergique.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "decongestionnants",
+    "yeux"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Peuvent dilater les pupilles; prudence en cas de glaucome à angle fermé.",
+   "mecanisme": "Stimulation adrénergique de l'œil.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "decongestionnants",
+    "muscles"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "decongestionnants",
+    "urinaire"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Peuvent rendre la miction difficile, surtout en cas de problème de prostate.",
+   "mecanisme": "Contraction du col de la vessie par stimulation alpha-adrénergique.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "decongestionnants",
+    "sang"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable sur les cellules du sang.",
+   "mecanisme": "Effet surtout sur les vaisseaux.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-estomac",
+   "type": "medicament_organe",
+   "elements": [
+    "dextromethorphane",
+    "estomac"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Peut causer des nausées chez certaines personnes.",
+   "mecanisme": "Effet indésirable digestif non spécifique.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-foie",
+   "type": "medicament_organe",
+   "elements": [
+    "dextromethorphane",
+    "foie"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune atteinte hépatique courante.",
+   "mecanisme": "Transformé dans le foie par l'enzyme CYP2D6.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-reins",
+   "type": "medicament_organe",
+   "elements": [
+    "dextromethorphane",
+    "reins"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Éliminé surtout après transformation hépatique.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-cerveau",
+   "type": "medicament_organe",
+   "elements": [
+    "dextromethorphane",
+    "cerveau"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Diminue le réflexe de la toux; peut causer somnolence ou étourdissements.",
+   "mecanisme": "Agit sur le centre de la toux du tronc cérébral (bulbe rachidien).",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-immunitaire",
+   "type": "medicament_organe",
+   "elements": [
+    "dextromethorphane",
+    "immunitaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Ne traite pas la cause de la toux.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-intestins",
+   "type": "medicament_organe",
+   "elements": [
+    "dextromethorphane",
+    "intestins"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe reconnue.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-voies_resp",
+   "type": "medicament_organe",
+   "elements": [
+    "dextromethorphane",
+    "voies_resp"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Soulage la toux sèche et irritante, sans en traiter la cause.",
+   "mecanisme": "Réduit le réflexe de toux envoyé par les voies respiratoires.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-peau",
+   "type": "medicament_organe",
+   "elements": [
+    "dextromethorphane",
+    "peau"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Réaction allergique possible mais rare.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "dextromethorphane",
+    "coeur"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Pas d'effet cardiaque courant.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "dextromethorphane",
+    "yeux"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "dextromethorphane",
+    "muscles"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "dextromethorphane",
+    "urinaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "dextromethorphane",
+    "sang"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action reconnue sur le sang.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "laxatif_stimulant-estomac",
+   "type": "medicament_organe",
+   "elements": [
+    "laxatif_stimulant",
+    "estomac"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable; l'action se fait plus loin dans le tube digestif.",
+   "mecanisme": "Agissent surtout dans le côlon.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "laxatif_stimulant-foie",
+   "type": "medicament_organe",
+   "elements": [
+    "laxatif_stimulant",
+    "foie"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Peu absorbés.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "laxatif_stimulant-reins",
+   "type": "medicament_organe",
+   "elements": [
+    "laxatif_stimulant",
+    "reins"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "L'usage prolongé peut causer des pertes de liquide et de sels qui affectent les reins.",
+   "mecanisme": "Diarrhée répétée entraîne déshydratation et déséquilibre en électrolytes.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "laxatif_stimulant-cerveau",
+   "type": "medicament_organe",
+   "elements": [
+    "laxatif_stimulant",
+    "cerveau"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "laxatif_stimulant-immunitaire",
+   "type": "medicament_organe",
+   "elements": [
+    "laxatif_stimulant",
+    "immunitaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "laxatif_stimulant-intestins",
+   "type": "medicament_organe",
+   "elements": [
+    "laxatif_stimulant",
+    "intestins"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Provoquent l'évacuation des selles; peuvent causer crampes et diarrhée.",
+   "mecanisme": "Stimulent les nerfs de la paroi du côlon et augmentent ses contractions et le passage d'eau.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "laxatif_stimulant-voies_resp",
+   "type": "medicament_organe",
+   "elements": [
+    "laxatif_stimulant",
+    "voies_resp"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "laxatif_stimulant-peau",
+   "type": "medicament_organe",
+   "elements": [
+    "laxatif_stimulant",
+    "peau"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "laxatif_stimulant-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "laxatif_stimulant",
+    "coeur"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "L'usage prolongé peut baisser le potassium, ce qui peut affecter le rythme du cœur.",
+   "mecanisme": "Perte de potassium par les selles.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "laxatif_stimulant-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "laxatif_stimulant",
+    "yeux"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "laxatif_stimulant-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "laxatif_stimulant",
+    "muscles"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Une perte de potassium liée à l'usage prolongé peut causer faiblesse musculaire et crampes.",
+   "mecanisme": "Déséquilibre en électrolytes.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "laxatif_stimulant-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "laxatif_stimulant",
+    "urinaire"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Le séné peut colorer l'urine (jaune-brun à rougeâtre), sans danger en soi.",
+   "mecanisme": "Pigments de la plante éliminés par l'urine.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "laxatif_stimulant-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "laxatif_stimulant",
+    "sang"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "peg-estomac",
+   "type": "medicament_organe",
+   "elements": [
+    "peg",
+    "estomac"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable; non absorbé.",
+   "mecanisme": "Reste dans le tube digestif.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "peg-foie",
+   "type": "medicament_organe",
+   "elements": [
+    "peg",
+    "foie"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Non absorbé ni métabolisé.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "peg-reins",
+   "type": "medicament_organe",
+   "elements": [
+    "peg",
+    "reins"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Non absorbé de façon significative.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "peg-cerveau",
+   "type": "medicament_organe",
+   "elements": [
+    "peg",
+    "cerveau"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "peg-immunitaire",
+   "type": "medicament_organe",
+   "elements": [
+    "peg",
+    "immunitaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "peg-intestins",
+   "type": "medicament_organe",
+   "elements": [
+    "peg",
+    "intestins"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Ramollit les selles et facilite leur passage; peut causer ballonnements ou diarrhée.",
+   "mecanisme": "Polymère non absorbé qui retient l'eau dans l'intestin par effet osmotique.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "peg-voies_resp",
+   "type": "medicament_organe",
+   "elements": [
+    "peg",
+    "voies_resp"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "peg-peau",
+   "type": "medicament_organe",
+   "elements": [
+    "peg",
+    "peau"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Réaction allergique rare.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "peg-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "peg",
+    "coeur"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Non absorbé.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "peg-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "peg",
+    "yeux"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "peg-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "peg",
+    "muscles"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "peg-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "peg",
+    "urinaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Non absorbé.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "peg-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "peg",
+    "sang"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Non absorbé.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "simethicone-estomac",
+   "type": "medicament_organe",
+   "elements": [
+    "simethicone",
+    "estomac"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Aide à évacuer les gaz de l'estomac.",
+   "mecanisme": "Réduit la tension de surface des bulles de gaz, qui se regroupent.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "simethicone-foie",
+   "type": "medicament_organe",
+   "elements": [
+    "simethicone",
+    "foie"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Non absorbée.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "simethicone-reins",
+   "type": "medicament_organe",
+   "elements": [
+    "simethicone",
+    "reins"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Non absorbée.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "simethicone-cerveau",
+   "type": "medicament_organe",
+   "elements": [
+    "simethicone",
+    "cerveau"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Non absorbée.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "simethicone-immunitaire",
+   "type": "medicament_organe",
+   "elements": [
+    "simethicone",
+    "immunitaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Non absorbée.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "simethicone-intestins",
+   "type": "medicament_organe",
+   "elements": [
+    "simethicone",
+    "intestins"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Soulage l'inconfort lié aux gaz et aux ballonnements.",
+   "mecanisme": "Fait éclater et regrouper les bulles de gaz; ne traite pas la cause.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "simethicone-voies_resp",
+   "type": "medicament_organe",
+   "elements": [
+    "simethicone",
+    "voies_resp"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Non absorbée.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "simethicone-peau",
+   "type": "medicament_organe",
+   "elements": [
+    "simethicone",
+    "peau"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Non absorbée.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "simethicone-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "simethicone",
+    "coeur"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Non absorbée.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "simethicone-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "simethicone",
+    "yeux"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Non absorbée.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "simethicone-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "simethicone",
+    "muscles"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Non absorbée.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "simethicone-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "simethicone",
+    "urinaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Non absorbée.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "simethicone-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "simethicone",
+    "sang"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Non absorbée.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "sro-estomac",
+   "type": "medicament_organe",
+   "elements": [
+    "sro",
+    "estomac"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable; on les prend en petites gorgées si nausées.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "sro-foie",
+   "type": "medicament_organe",
+   "elements": [
+    "sro",
+    "foie"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "sro-reins",
+   "type": "medicament_organe",
+   "elements": [
+    "sro",
+    "reins"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Aident à remplacer les liquides perdus et à maintenir la circulation vers les reins.",
+   "mecanisme": "Compensent la déshydratation.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "sro-cerveau",
+   "type": "medicament_organe",
+   "elements": [
+    "sro",
+    "cerveau"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "sro-immunitaire",
+   "type": "medicament_organe",
+   "elements": [
+    "sro",
+    "immunitaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Ne traite pas l'infection.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "sro-intestins",
+   "type": "medicament_organe",
+   "elements": [
+    "sro",
+    "intestins"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Remplacent l'eau et les sels perdus lors de diarrhée ou de vomissements.",
+   "mecanisme": "Le glucose et le sodium sont absorbés ensemble, ce qui entraîne l'eau avec eux.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "sro-voies_resp",
+   "type": "medicament_organe",
+   "elements": [
+    "sro",
+    "voies_resp"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "sro-peau",
+   "type": "medicament_organe",
+   "elements": [
+    "sro",
+    "peau"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "sro-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "sro",
+    "coeur"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Maintiennent le volume de liquide en circulation.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "sro-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "sro",
+    "yeux"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "sro-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "sro",
+    "muscles"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Remplacent des sels perdus, sans effet musculaire direct.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "sro-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "sro",
+    "urinaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "sro-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "sro",
+    "sang"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aident à maintenir le volume sanguin lors de pertes de liquide.",
+   "mecanisme": "Remplacement des liquides perdus.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "acetaminophene-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "acetaminophene",
+    "coeur"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Pas d'effet reconnu sur la pression ou le cœur, contrairement aux AINS.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "acetaminophene-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "acetaminophene",
+    "yeux"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "acetaminophene-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "acetaminophene",
+    "muscles"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Soulage la douleur, mais sans effet anti-inflammatoire marqué.",
+   "mecanisme": "Action surtout centrale.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "acetaminophene-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "acetaminophene",
+    "urinaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "acetaminophene-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "acetaminophene",
+    "sang"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucun effet notable sur les plaquettes.",
+   "mecanisme": "Pas d'inhibition des COX plaquettaires.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "ibuprofene-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "ibuprofene",
+    "coeur"
+   ],
+   "categorie_resultat": "risque",
+   "resultat": "Peut faire monter la pression artérielle et retenir l'eau; risque cardiovasculaire accru chez certaines personnes.",
+   "mecanisme": "Moins de prostaglandines vasodilatatrices et rétention de sel et d'eau.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "ibuprofene-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "ibuprofene",
+    "yeux"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Pas d'action directe reconnue.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "ibuprofene-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "ibuprofene",
+    "muscles"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Soulage la douleur et l'inflammation des muscles et des articulations.",
+   "mecanisme": "Réduit les prostaglandines produites dans les tissus enflammés.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "ibuprofene-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "ibuprofene",
+    "urinaire"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Peut causer de la rétention d'eau et affecter la production d'urine par ses effets sur les reins.",
+   "mecanisme": "Effet indirect, lié à la baisse des prostaglandines rénales.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "ibuprofene-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "ibuprofene",
+    "sang"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Diminue la capacité des plaquettes à s'agglutiner et augmente le risque de saignement.",
+   "mecanisme": "Inhibe la COX-1 plaquettaire de façon réversible.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "aas-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "aas",
+    "coeur"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Son effet antiplaquettaire est à la base de son usage cardiovasculaire préventif, décidé avec un professionnel de la santé.",
+   "mecanisme": "Inhibe la COX-1 plaquettaire de façon irréversible, ce qui réduit la formation de caillots.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "aas-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "aas",
+    "yeux"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Pas d'action directe reconnue.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "aas-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "aas",
+    "muscles"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Soulage la douleur et l'inflammation.",
+   "mecanisme": "Réduit les prostaglandines dans les tissus.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "aas-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "aas",
+    "urinaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Pas d'action directe reconnue.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "aas-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "aas",
+    "sang"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Rend les plaquettes inefficaces pendant toute leur vie et augmente le risque de saignement.",
+   "mecanisme": "Inhibition irréversible de la COX-1 plaquettaire.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loratadine-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "loratadine",
+    "coeur"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Antihistaminique peu actif sur le cœur.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loratadine-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "loratadine",
+    "yeux"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Soulage démangeaisons et larmoiement liés aux allergies.",
+   "mecanisme": "Bloque les récepteurs H1 de l'histamine, médiateur de l'allergie.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loratadine-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "loratadine",
+    "muscles"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loratadine-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "loratadine",
+    "urinaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Effet anticholinergique faible.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loratadine-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "loratadine",
+    "sang"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "cetirizine-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "cetirizine",
+    "coeur"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Antihistaminique peu actif sur le cœur.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "cetirizine-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "cetirizine",
+    "yeux"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Soulage démangeaisons et larmoiement liés aux allergies.",
+   "mecanisme": "Bloque les récepteurs H1 de l'histamine.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "cetirizine-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "cetirizine",
+    "muscles"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "cetirizine-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "cetirizine",
+    "urinaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Effet anticholinergique faible.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "cetirizine-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "cetirizine",
+    "sang"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "diphenhydramine-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "diphenhydramine",
+    "coeur"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Peut accélérer la fréquence cardiaque.",
+   "mecanisme": "Effet anticholinergique.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "diphenhydramine-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "diphenhydramine",
+    "yeux"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Peut causer vision floue et sécheresse; prudence en cas de glaucome à angle fermé.",
+   "mecanisme": "Effet anticholinergique.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "diphenhydramine-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "diphenhydramine",
+    "muscles"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "diphenhydramine-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "diphenhydramine",
+    "urinaire"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Peut causer de la difficulté à uriner, surtout en cas de problème de prostate.",
+   "mecanisme": "Effet anticholinergique sur la vessie.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "diphenhydramine-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "diphenhydramine",
+    "sang"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "famotidine-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "famotidine",
+    "coeur"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Bloque les récepteurs H2 de l'estomac, pas ceux du cœur aux usages habituels.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "famotidine-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "famotidine",
+    "yeux"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "famotidine-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "famotidine",
+    "muscles"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "famotidine-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "famotidine",
+    "urinaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "famotidine-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "famotidine",
+    "sang"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "omeprazole-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "omeprazole",
+    "coeur"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Agit sur la pompe à acide de l'estomac.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "omeprazole-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "omeprazole",
+    "yeux"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "omeprazole-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "omeprazole",
+    "muscles"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "omeprazole-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "omeprazole",
+    "urinaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "omeprazole-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "omeprazole",
+    "sang"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loperamide-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "loperamide",
+    "coeur"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages recommandés.",
+   "mecanisme": "Agit sur les récepteurs opioïdes de l'intestin.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loperamide-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "loperamide",
+    "yeux"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loperamide-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "loperamide",
+    "muscles"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable sur les muscles du squelette; agit sur le muscle de l'intestin.",
+   "mecanisme": "Récepteurs opioïdes de l'intestin.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loperamide-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "loperamide",
+    "urinaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loperamide-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "loperamide",
+    "sang"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Peu absorbé.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "carbonate_calcium-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "carbonate_calcium",
+    "coeur"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels comme antiacide.",
+   "mecanisme": "Agit en neutralisant l'acide dans l'estomac.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "carbonate_calcium-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "carbonate_calcium",
+    "yeux"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "carbonate_calcium-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "carbonate_calcium",
+    "muscles"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels comme antiacide.",
+   "mecanisme": "Le calcium sert à la contraction musculaire, mais l'apport d'un antiacide ne change pas cela.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "carbonate_calcium-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "carbonate_calcium",
+    "urinaire"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "Un excès de calcium peut contribuer aux calculs rénaux chez certaines personnes.",
+   "mecanisme": "Élimination du calcium dans l'urine.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "carbonate_calcium-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "carbonate_calcium",
+    "sang"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable aux usages habituels.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "guaifenesine-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "guaifenesine",
+    "coeur"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "guaifenesine-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "guaifenesine",
+    "yeux"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "guaifenesine-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "guaifenesine",
+    "muscles"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "guaifenesine-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "guaifenesine",
+    "urinaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "guaifenesine-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "guaifenesine",
+    "sang"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Pas d'action directe.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "hydrocortisone-coeur",
+   "type": "medicament_organe",
+   "elements": [
+    "hydrocortisone",
+    "coeur"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable en usage topique.",
+   "mecanisme": "Très peu absorbée par la peau.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "hydrocortisone-yeux",
+   "type": "medicament_organe",
+   "elements": [
+    "hydrocortisone",
+    "yeux"
+   ],
+   "categorie_resultat": "effet_secondaire",
+   "resultat": "À éviter autour des yeux: usage près des yeux peut augmenter la pression oculaire (rare).",
+   "mecanisme": "Les corticostéroïdes peuvent élever la pression dans l'œil.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "hydrocortisone-muscles",
+   "type": "medicament_organe",
+   "elements": [
+    "hydrocortisone",
+    "muscles"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable en usage topique.",
+   "mecanisme": "Très peu absorbée.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "hydrocortisone-urinaire",
+   "type": "medicament_organe",
+   "elements": [
+    "hydrocortisone",
+    "urinaire"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable.",
+   "mecanisme": "Très peu absorbée.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "hydrocortisone-sang",
+   "type": "medicament_organe",
+   "elements": [
+    "hydrocortisone",
+    "sang"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune réaction notable en usage topique.",
+   "mecanisme": "Très peu absorbée.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-humain",
+   "type": "medicament_humain",
+   "elements": [
+    "naproxene",
+    "humain"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Profil global: anti-inflammatoire et analgésique, avec points de vigilance pour l'estomac, les reins, le cœur et le saignement.",
+   "mecanisme": "Inhibe les COX et réduit les prostaglandines.",
+   "effets_indesirables": "Maux d'estomac, saignement digestif, rétention d'eau, hausse de la pression artérielle, éruptions.",
+   "interactions": "Autres AINS, AAS, anticoagulants, produits combinés contre le rhume: À VALIDER par un pharmacien.",
+   "populations_a_risque": "Ulcère, maladie des reins, du cœur ou hypertension, asthme sensible aux AINS, grossesse: demander au pharmacien.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-humain",
+   "type": "medicament_humain",
+   "elements": [
+    "dimenhydrinate",
+    "humain"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Profil global: antiémétique sédatif pour le mal des transports, avec effets anticholinergiques.",
+   "mecanisme": "Bloque les récepteurs H1 et muscariniques.",
+   "effets_indesirables": "Somnolence, bouche sèche, vision floue, constipation, difficulté à uriner.",
+   "interactions": "Autres sédatifs et antihistaminiques, alcool: À VALIDER. Contient la même substance active que la diphénhydramine.",
+   "populations_a_risque": "Glaucome, problème de prostate, personnes âgées, enfants: demander au pharmacien.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-humain",
+   "type": "medicament_humain",
+   "elements": [
+    "decongestionnants",
+    "humain"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Profil global: soulagent la congestion nasale mais stimulent le cœur et les vaisseaux.",
+   "mecanisme": "Stimulent les récepteurs alpha-adrénergiques et resserrent les vaisseaux.",
+   "effets_indesirables": "Nervosité, insomnie, palpitations, hausse de la pression artérielle, difficulté à uriner.",
+   "interactions": "Autres stimulants, certains antidépresseurs: À VALIDER. Plusieurs produits contre le rhume en contiennent déjà.",
+   "populations_a_risque": "Hypertension, maladie du cœur, hyperthyroïdie, glaucome, problème de prostate: demander au pharmacien.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-humain",
+   "type": "medicament_humain",
+   "elements": [
+    "dextromethorphane",
+    "humain"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Profil global: antitussif d'action centrale, sans effet sur la cause de la toux.",
+   "mecanisme": "Diminue le réflexe de toux au niveau du tronc cérébral.",
+   "effets_indesirables": "Somnolence, étourdissements, nausées.",
+   "interactions": "Certains antidépresseurs et médicaments qui touchent la sérotonine: À VALIDER. Attention aux produits combinés.",
+   "populations_a_risque": "Toux avec beaucoup de sécrétions, asthme, enfants: demander au pharmacien.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "laxatif_stimulant-humain",
+   "type": "medicament_humain",
+   "elements": [
+    "laxatif_stimulant",
+    "humain"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Profil global: provoquent l'évacuation des selles; pour un usage de courte durée.",
+   "mecanisme": "Stimulent les nerfs et les contractions du côlon.",
+   "effets_indesirables": "Crampes, diarrhée, pertes de liquides et de sels si usage prolongé, dépendance du côlon (À VALIDER).",
+   "interactions": "Médicaments qui font perdre du potassium: À VALIDER.",
+   "populations_a_risque": "Douleur abdominale inexpliquée, occlusion, enfants, grossesse: demander au pharmacien.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "peg-humain",
+   "type": "medicament_humain",
+   "elements": [
+    "peg",
+    "humain"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Profil global: laxatif osmotique doux, peu absorbé.",
+   "mecanisme": "Retient l'eau dans l'intestin par effet osmotique.",
+   "effets_indesirables": "Ballonnements, gaz, nausées, diarrhée.",
+   "interactions": "Peut accélérer le transit et modifier l'absorption d'autres médicaments: À VALIDER.",
+   "populations_a_risque": "Douleur abdominale inexpliquée, occlusion, enfants: demander au pharmacien.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "simethicone-humain",
+   "type": "medicament_humain",
+   "elements": [
+    "simethicone",
+    "humain"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Profil global: antiflatulent non absorbé, très bien toléré.",
+   "mecanisme": "Regroupe les bulles de gaz.",
+   "effets_indesirables": "Très rares.",
+   "interactions": "Aucune interaction notable connue: À VALIDER.",
+   "populations_a_risque": "Aucune particulière connue: À VALIDER.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "sro-humain",
+   "type": "medicament_humain",
+   "elements": [
+    "sro",
+    "humain"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Profil global: remplacement des liquides et des sels perdus lors de diarrhée ou de vomissements.",
+   "mecanisme": "Co-transport du sodium et du glucose, qui entraîne l'eau.",
+   "effets_indesirables": "Rares; nausées si prises trop vite.",
+   "interactions": "Aucune interaction notable connue: À VALIDER.",
+   "populations_a_risque": "Nourrissons, maladie des reins ou du cœur, diarrhée sévère ou prolongée: demander au pharmacien ou consulter.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-ibuprofene",
+   "type": "medicament_medicament",
+   "elements": [
+    "naproxene",
+    "ibuprofene"
+   ],
+   "categorie_resultat": "risque",
+   "resultat": "RISQUE: deux AINS ensemble n'ajoutent pas d'efficacité mais ajoutent les risques.",
+   "mecanisme": "Même mécanisme (inhibition des COX): les effets indésirables sur l'estomac, les reins et le saignement s'additionnent.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-aas",
+   "type": "medicament_medicament",
+   "elements": [
+    "naproxene",
+    "aas"
+   ],
+   "categorie_resultat": "risque",
+   "resultat": "RISQUE: deux médicaments qui augmentent le risque de saignement et d'irritation de l'estomac.",
+   "mecanisme": "Le naproxène et l'AAS inhibent tous deux les COX; les risques digestifs s'additionnent.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-omeprazole",
+   "type": "medicament_medicament",
+   "elements": [
+    "naproxene",
+    "omeprazole"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Le pharmacien peut recommander une protection de l'estomac dans certains cas.",
+   "mecanisme": "Les inhibiteurs de la pompe à acide réduisent les lésions de l'estomac liées aux AINS.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-decongestionnants",
+   "type": "medicament_medicament",
+   "elements": [
+    "naproxene",
+    "decongestionnants"
+   ],
+   "categorie_resultat": "risque",
+   "resultat": "RISQUE: tous deux peuvent faire monter la pression artérielle.",
+   "mecanisme": "Les AINS retiennent le sel et l'eau; les décongestionnants resserrent les vaisseaux.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-laxatif_stimulant",
+   "type": "medicament_medicament",
+   "elements": [
+    "naproxene",
+    "laxatif_stimulant"
+   ],
+   "categorie_resultat": "risque",
+   "resultat": "RISQUE: la perte de liquides peut augmenter le risque pour les reins avec un AINS.",
+   "mecanisme": "Déshydratation combinée à l'inhibition des prostaglandines rénales.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "ibuprofene-decongestionnants",
+   "type": "medicament_medicament",
+   "elements": [
+    "ibuprofene",
+    "decongestionnants"
+   ],
+   "categorie_resultat": "risque",
+   "resultat": "RISQUE: tous deux peuvent faire monter la pression artérielle.",
+   "mecanisme": "Les AINS retiennent le sel et l'eau; les décongestionnants resserrent les vaisseaux.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "ibuprofene-laxatif_stimulant",
+   "type": "medicament_medicament",
+   "elements": [
+    "ibuprofene",
+    "laxatif_stimulant"
+   ],
+   "categorie_resultat": "risque",
+   "resultat": "RISQUE: la perte de liquides peut augmenter le risque pour les reins avec un AINS.",
+   "mecanisme": "Déshydratation combinée à l'inhibition des prostaglandines rénales.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-diphenhydramine",
+   "type": "medicament_medicament",
+   "elements": [
+    "dimenhydrinate",
+    "diphenhydramine"
+   ],
+   "categorie_resultat": "risque",
+   "resultat": "RISQUE: doublon, car le dimenhydrinate libère de la diphénhydramine dans le corps.",
+   "mecanisme": "Même substance active: somnolence et effets anticholinergiques s'additionnent.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-cetirizine",
+   "type": "medicament_medicament",
+   "elements": [
+    "dimenhydrinate",
+    "cetirizine"
+   ],
+   "categorie_resultat": "risque",
+   "resultat": "RISQUE: deux antihistaminiques ensemble, avec somnolence accrue.",
+   "mecanisme": "Les effets sédatifs et antihistaminiques s'additionnent.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-loratadine",
+   "type": "medicament_medicament",
+   "elements": [
+    "dimenhydrinate",
+    "loratadine"
+   ],
+   "categorie_resultat": "risque",
+   "resultat": "RISQUE: deux antihistaminiques ensemble; les effets s'additionnent.",
+   "mecanisme": "Même classe pharmacologique (antagonistes H1).",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-diphenhydramine",
+   "type": "medicament_medicament",
+   "elements": [
+    "dextromethorphane",
+    "diphenhydramine"
+   ],
+   "categorie_resultat": "risque",
+   "resultat": "RISQUE (À VALIDER): la diphénhydramine peut augmenter le taux de dextrométhorphane et la somnolence.",
+   "mecanisme": "La diphénhydramine peut freiner l'enzyme CYP2D6 qui transforme le dextrométhorphane.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-guaifenesine",
+   "type": "medicament_medicament",
+   "elements": [
+    "dextromethorphane",
+    "guaifenesine"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Souvent combinés dans des produits contre la toux: l'un calme la toux, l'autre fluidifie les sécrétions.",
+   "mecanisme": "Actions différentes et complémentaires.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "laxatif_stimulant-loperamide",
+   "type": "medicament_medicament",
+   "elements": [
+    "laxatif_stimulant",
+    "loperamide"
+   ],
+   "categorie_resultat": "risque",
+   "resultat": "RISQUE: effets opposés (accélérer et ralentir l'intestin).",
+   "mecanisme": "L'un stimule le côlon, l'autre le ralentit.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "laxatif_stimulant-peg",
+   "type": "medicament_medicament",
+   "elements": [
+    "laxatif_stimulant",
+    "peg"
+   ],
+   "categorie_resultat": "risque",
+   "resultat": "RISQUE: doublon de laxatifs, avec risque de diarrhée excessive et de perte de liquides.",
+   "mecanisme": "Deux mécanismes laxatifs qui s'additionnent.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "peg-loperamide",
+   "type": "medicament_medicament",
+   "elements": [
+    "peg",
+    "loperamide"
+   ],
+   "categorie_resultat": "risque",
+   "resultat": "RISQUE: effets opposés sur l'intestin.",
+   "mecanisme": "L'un attire l'eau dans l'intestin, l'autre ralentit le transit.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loperamide-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "loperamide",
+    "sro"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Complémentaires lors d'une diarrhée: l'un en réduit la fréquence, l'autre remplace les liquides perdus.",
+   "mecanisme": "Le lopéramide ralentit le transit; les solutions de réhydratation remplacent l'eau et les sels.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loperamide-simethicone",
+   "type": "medicament_medicament",
+   "elements": [
+    "loperamide",
+    "simethicone"
+   ],
+   "categorie_resultat": "benefique",
+   "resultat": "Existent aussi dans des produits combinés: diarrhée et gaz.",
+   "mecanisme": "Actions différentes et complémentaires.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "acetaminophene-naproxene",
+   "type": "medicament_medicament",
+   "elements": [
+    "acetaminophene",
+    "naproxene"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "acetaminophene-dimenhydrinate",
+   "type": "medicament_medicament",
+   "elements": [
+    "acetaminophene",
+    "dimenhydrinate"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "acetaminophene-decongestionnants",
+   "type": "medicament_medicament",
+   "elements": [
+    "acetaminophene",
+    "decongestionnants"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "acetaminophene-dextromethorphane",
+   "type": "medicament_medicament",
+   "elements": [
+    "acetaminophene",
+    "dextromethorphane"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "acetaminophene-laxatif_stimulant",
+   "type": "medicament_medicament",
+   "elements": [
+    "acetaminophene",
+    "laxatif_stimulant"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "acetaminophene-peg",
+   "type": "medicament_medicament",
+   "elements": [
+    "acetaminophene",
+    "peg"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "acetaminophene-simethicone",
+   "type": "medicament_medicament",
+   "elements": [
+    "acetaminophene",
+    "simethicone"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "acetaminophene-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "acetaminophene",
+    "sro"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "ibuprofene-dimenhydrinate",
+   "type": "medicament_medicament",
+   "elements": [
+    "ibuprofene",
+    "dimenhydrinate"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "ibuprofene-dextromethorphane",
+   "type": "medicament_medicament",
+   "elements": [
+    "ibuprofene",
+    "dextromethorphane"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "ibuprofene-peg",
+   "type": "medicament_medicament",
+   "elements": [
+    "ibuprofene",
+    "peg"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "ibuprofene-simethicone",
+   "type": "medicament_medicament",
+   "elements": [
+    "ibuprofene",
+    "simethicone"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "ibuprofene-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "ibuprofene",
+    "sro"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "aas-dimenhydrinate",
+   "type": "medicament_medicament",
+   "elements": [
+    "aas",
+    "dimenhydrinate"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "aas-decongestionnants",
+   "type": "medicament_medicament",
+   "elements": [
+    "aas",
+    "decongestionnants"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "aas-dextromethorphane",
+   "type": "medicament_medicament",
+   "elements": [
+    "aas",
+    "dextromethorphane"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "aas-laxatif_stimulant",
+   "type": "medicament_medicament",
+   "elements": [
+    "aas",
+    "laxatif_stimulant"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "aas-peg",
+   "type": "medicament_medicament",
+   "elements": [
+    "aas",
+    "peg"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "aas-simethicone",
+   "type": "medicament_medicament",
+   "elements": [
+    "aas",
+    "simethicone"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "aas-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "aas",
+    "sro"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loratadine-naproxene",
+   "type": "medicament_medicament",
+   "elements": [
+    "loratadine",
+    "naproxene"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loratadine-decongestionnants",
+   "type": "medicament_medicament",
+   "elements": [
+    "loratadine",
+    "decongestionnants"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loratadine-dextromethorphane",
+   "type": "medicament_medicament",
+   "elements": [
+    "loratadine",
+    "dextromethorphane"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loratadine-laxatif_stimulant",
+   "type": "medicament_medicament",
+   "elements": [
+    "loratadine",
+    "laxatif_stimulant"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loratadine-peg",
+   "type": "medicament_medicament",
+   "elements": [
+    "loratadine",
+    "peg"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loratadine-simethicone",
+   "type": "medicament_medicament",
+   "elements": [
+    "loratadine",
+    "simethicone"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loratadine-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "loratadine",
+    "sro"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "cetirizine-naproxene",
+   "type": "medicament_medicament",
+   "elements": [
+    "cetirizine",
+    "naproxene"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "cetirizine-decongestionnants",
+   "type": "medicament_medicament",
+   "elements": [
+    "cetirizine",
+    "decongestionnants"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "cetirizine-dextromethorphane",
+   "type": "medicament_medicament",
+   "elements": [
+    "cetirizine",
+    "dextromethorphane"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "cetirizine-laxatif_stimulant",
+   "type": "medicament_medicament",
+   "elements": [
+    "cetirizine",
+    "laxatif_stimulant"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "cetirizine-peg",
+   "type": "medicament_medicament",
+   "elements": [
+    "cetirizine",
+    "peg"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "cetirizine-simethicone",
+   "type": "medicament_medicament",
+   "elements": [
+    "cetirizine",
+    "simethicone"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "cetirizine-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "cetirizine",
+    "sro"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "diphenhydramine-naproxene",
+   "type": "medicament_medicament",
+   "elements": [
+    "diphenhydramine",
+    "naproxene"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "diphenhydramine-decongestionnants",
+   "type": "medicament_medicament",
+   "elements": [
+    "diphenhydramine",
+    "decongestionnants"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "diphenhydramine-laxatif_stimulant",
+   "type": "medicament_medicament",
+   "elements": [
+    "diphenhydramine",
+    "laxatif_stimulant"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "diphenhydramine-peg",
+   "type": "medicament_medicament",
+   "elements": [
+    "diphenhydramine",
+    "peg"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "diphenhydramine-simethicone",
+   "type": "medicament_medicament",
+   "elements": [
+    "diphenhydramine",
+    "simethicone"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "diphenhydramine-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "diphenhydramine",
+    "sro"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "famotidine-naproxene",
+   "type": "medicament_medicament",
+   "elements": [
+    "famotidine",
+    "naproxene"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "famotidine-dimenhydrinate",
+   "type": "medicament_medicament",
+   "elements": [
+    "famotidine",
+    "dimenhydrinate"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "famotidine-decongestionnants",
+   "type": "medicament_medicament",
+   "elements": [
+    "famotidine",
+    "decongestionnants"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "famotidine-dextromethorphane",
+   "type": "medicament_medicament",
+   "elements": [
+    "famotidine",
+    "dextromethorphane"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "famotidine-laxatif_stimulant",
+   "type": "medicament_medicament",
+   "elements": [
+    "famotidine",
+    "laxatif_stimulant"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "famotidine-peg",
+   "type": "medicament_medicament",
+   "elements": [
+    "famotidine",
+    "peg"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "famotidine-simethicone",
+   "type": "medicament_medicament",
+   "elements": [
+    "famotidine",
+    "simethicone"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "famotidine-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "famotidine",
+    "sro"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "omeprazole-dimenhydrinate",
+   "type": "medicament_medicament",
+   "elements": [
+    "omeprazole",
+    "dimenhydrinate"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "omeprazole-decongestionnants",
+   "type": "medicament_medicament",
+   "elements": [
+    "omeprazole",
+    "decongestionnants"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "omeprazole-dextromethorphane",
+   "type": "medicament_medicament",
+   "elements": [
+    "omeprazole",
+    "dextromethorphane"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "omeprazole-laxatif_stimulant",
+   "type": "medicament_medicament",
+   "elements": [
+    "omeprazole",
+    "laxatif_stimulant"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "omeprazole-peg",
+   "type": "medicament_medicament",
+   "elements": [
+    "omeprazole",
+    "peg"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "omeprazole-simethicone",
+   "type": "medicament_medicament",
+   "elements": [
+    "omeprazole",
+    "simethicone"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "omeprazole-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "omeprazole",
+    "sro"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loperamide-naproxene",
+   "type": "medicament_medicament",
+   "elements": [
+    "loperamide",
+    "naproxene"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loperamide-dimenhydrinate",
+   "type": "medicament_medicament",
+   "elements": [
+    "loperamide",
+    "dimenhydrinate"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loperamide-decongestionnants",
+   "type": "medicament_medicament",
+   "elements": [
+    "loperamide",
+    "decongestionnants"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "loperamide-dextromethorphane",
+   "type": "medicament_medicament",
+   "elements": [
+    "loperamide",
+    "dextromethorphane"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "carbonate_calcium-naproxene",
+   "type": "medicament_medicament",
+   "elements": [
+    "carbonate_calcium",
+    "naproxene"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "carbonate_calcium-dimenhydrinate",
+   "type": "medicament_medicament",
+   "elements": [
+    "carbonate_calcium",
+    "dimenhydrinate"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "carbonate_calcium-decongestionnants",
+   "type": "medicament_medicament",
+   "elements": [
+    "carbonate_calcium",
+    "decongestionnants"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "carbonate_calcium-dextromethorphane",
+   "type": "medicament_medicament",
+   "elements": [
+    "carbonate_calcium",
+    "dextromethorphane"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "carbonate_calcium-laxatif_stimulant",
+   "type": "medicament_medicament",
+   "elements": [
+    "carbonate_calcium",
+    "laxatif_stimulant"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "carbonate_calcium-peg",
+   "type": "medicament_medicament",
+   "elements": [
+    "carbonate_calcium",
+    "peg"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "carbonate_calcium-simethicone",
+   "type": "medicament_medicament",
+   "elements": [
+    "carbonate_calcium",
+    "simethicone"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "carbonate_calcium-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "carbonate_calcium",
+    "sro"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "guaifenesine-naproxene",
+   "type": "medicament_medicament",
+   "elements": [
+    "guaifenesine",
+    "naproxene"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "guaifenesine-dimenhydrinate",
+   "type": "medicament_medicament",
+   "elements": [
+    "guaifenesine",
+    "dimenhydrinate"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "guaifenesine-decongestionnants",
+   "type": "medicament_medicament",
+   "elements": [
+    "guaifenesine",
+    "decongestionnants"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "guaifenesine-laxatif_stimulant",
+   "type": "medicament_medicament",
+   "elements": [
+    "guaifenesine",
+    "laxatif_stimulant"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "guaifenesine-peg",
+   "type": "medicament_medicament",
+   "elements": [
+    "guaifenesine",
+    "peg"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "guaifenesine-simethicone",
+   "type": "medicament_medicament",
+   "elements": [
+    "guaifenesine",
+    "simethicone"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "guaifenesine-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "guaifenesine",
+    "sro"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "hydrocortisone-naproxene",
+   "type": "medicament_medicament",
+   "elements": [
+    "hydrocortisone",
+    "naproxene"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "hydrocortisone-dimenhydrinate",
+   "type": "medicament_medicament",
+   "elements": [
+    "hydrocortisone",
+    "dimenhydrinate"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "hydrocortisone-decongestionnants",
+   "type": "medicament_medicament",
+   "elements": [
+    "hydrocortisone",
+    "decongestionnants"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "hydrocortisone-dextromethorphane",
+   "type": "medicament_medicament",
+   "elements": [
+    "hydrocortisone",
+    "dextromethorphane"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "hydrocortisone-laxatif_stimulant",
+   "type": "medicament_medicament",
+   "elements": [
+    "hydrocortisone",
+    "laxatif_stimulant"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "hydrocortisone-peg",
+   "type": "medicament_medicament",
+   "elements": [
+    "hydrocortisone",
+    "peg"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "hydrocortisone-simethicone",
+   "type": "medicament_medicament",
+   "elements": [
+    "hydrocortisone",
+    "simethicone"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "hydrocortisone-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "hydrocortisone",
+    "sro"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-dimenhydrinate",
+   "type": "medicament_medicament",
+   "elements": [
+    "naproxene",
+    "dimenhydrinate"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-dextromethorphane",
+   "type": "medicament_medicament",
+   "elements": [
+    "naproxene",
+    "dextromethorphane"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-peg",
+   "type": "medicament_medicament",
+   "elements": [
+    "naproxene",
+    "peg"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-simethicone",
+   "type": "medicament_medicament",
+   "elements": [
+    "naproxene",
+    "simethicone"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "naproxene-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "naproxene",
+    "sro"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-decongestionnants",
+   "type": "medicament_medicament",
+   "elements": [
+    "dimenhydrinate",
+    "decongestionnants"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-dextromethorphane",
+   "type": "medicament_medicament",
+   "elements": [
+    "dimenhydrinate",
+    "dextromethorphane"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-laxatif_stimulant",
+   "type": "medicament_medicament",
+   "elements": [
+    "dimenhydrinate",
+    "laxatif_stimulant"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-peg",
+   "type": "medicament_medicament",
+   "elements": [
+    "dimenhydrinate",
+    "peg"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-simethicone",
+   "type": "medicament_medicament",
+   "elements": [
+    "dimenhydrinate",
+    "simethicone"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dimenhydrinate-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "dimenhydrinate",
+    "sro"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-dextromethorphane",
+   "type": "medicament_medicament",
+   "elements": [
+    "decongestionnants",
+    "dextromethorphane"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-laxatif_stimulant",
+   "type": "medicament_medicament",
+   "elements": [
+    "decongestionnants",
+    "laxatif_stimulant"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-peg",
+   "type": "medicament_medicament",
+   "elements": [
+    "decongestionnants",
+    "peg"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-simethicone",
+   "type": "medicament_medicament",
+   "elements": [
+    "decongestionnants",
+    "simethicone"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "decongestionnants-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "decongestionnants",
+    "sro"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-laxatif_stimulant",
+   "type": "medicament_medicament",
+   "elements": [
+    "dextromethorphane",
+    "laxatif_stimulant"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-peg",
+   "type": "medicament_medicament",
+   "elements": [
+    "dextromethorphane",
+    "peg"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-simethicone",
+   "type": "medicament_medicament",
+   "elements": [
+    "dextromethorphane",
+    "simethicone"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "dextromethorphane-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "dextromethorphane",
+    "sro"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "laxatif_stimulant-simethicone",
+   "type": "medicament_medicament",
+   "elements": [
+    "laxatif_stimulant",
+    "simethicone"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "laxatif_stimulant-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "laxatif_stimulant",
+    "sro"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "peg-simethicone",
+   "type": "medicament_medicament",
+   "elements": [
+    "peg",
+    "simethicone"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "peg-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "peg",
+    "sro"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  },
+  {
+   "id": "simethicone-sro",
+   "type": "medicament_medicament",
+   "elements": [
+    "simethicone",
+    "sro"
+   ],
+   "categorie_resultat": "neutre",
+   "resultat": "Aucune interaction notable connue entre les deux (À VALIDER).",
+   "mecanisme": "Cibles et mécanismes différents; aucune interaction cliniquement importante n'est reconnue dans les sources usuelles. Chacun garde ses propres effets indésirables.",
+   "niveau_certitude": "a_valider",
+   "source": "À VALIDER (brouillon extension; monographie Santé Canada, DrugBank, manuel de pharmacologie)"
+  }
+ ]
+}

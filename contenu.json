@@ -1,0 +1,604 @@
+{
+  "meta": {
+    "titre": "Little Pharmacist",
+    "avertissement": "Jeu éducatif. Consultez un pharmacien pour toute question sur vos médicaments.",
+    "version": "0.1-brouillon",
+    "note_revision": "Contenu rédigé pour relecture par un pharmacien. Toute fiche « a_valider » doit être vérifiée avant diffusion. Aucune dose n'est volontairement incluse. Les sources indiquées sont des références générales à consulter, pas des citations de pages précises."
+  },
+  "sources": {
+    "SC": "Monographie de produit de Santé Canada (Base de données sur les produits pharmaceutiques)",
+    "DB": "DrugBank (go.drugbank.com)",
+    "MAN": "Manuel de pharmacologie (ex. Goodman & Gilman, Katzung)"
+  },
+  "medicaments": [
+    { "id": "acetaminophene", "nom": "Acétaminophène", "emoji": "💊", "classe": "Analgésique / antipyrétique" },
+    { "id": "ibuprofene", "nom": "Ibuprofène", "emoji": "🟠", "classe": "Anti-inflammatoire non stéroïdien (AINS)" },
+    { "id": "aas", "nom": "AAS (aspirine)", "emoji": "⚪", "classe": "AINS / antiplaquettaire" },
+    { "id": "loratadine", "nom": "Loratadine", "emoji": "🌼", "classe": "Antihistaminique H1 de 2e génération" },
+    { "id": "cetirizine", "nom": "Cétirizine", "emoji": "🌸", "classe": "Antihistaminique H1 de 2e génération" },
+    { "id": "diphenhydramine", "nom": "Diphénhydramine", "emoji": "😴", "classe": "Antihistaminique H1 de 1re génération" },
+    { "id": "famotidine", "nom": "Famotidine", "emoji": "🧪", "classe": "Antagoniste des récepteurs H2" },
+    { "id": "omeprazole", "nom": "Oméprazole", "emoji": "🛡️", "classe": "Inhibiteur de la pompe à protons" },
+    { "id": "loperamide", "nom": "Lopéramide", "emoji": "🚦", "classe": "Antidiarrhéique" },
+    { "id": "carbonate_calcium", "nom": "Carbonate de calcium", "emoji": "🥛", "classe": "Antiacide" },
+    { "id": "guaifenesine", "nom": "Guaïfénésine", "emoji": "💧", "classe": "Expectorant" },
+    { "id": "hydrocortisone", "nom": "Hydrocortisone topique", "emoji": "🧴", "classe": "Corticostéroïde topique" }
+  ],
+  "organes": [
+    { "id": "estomac", "nom": "Estomac", "emoji": "🫃" },
+    { "id": "foie", "nom": "Foie", "emoji": "🟤" },
+    { "id": "reins", "nom": "Reins", "emoji": "🫘" },
+    { "id": "cerveau", "nom": "Cerveau", "emoji": "🧠" },
+    { "id": "immunitaire", "nom": "Système immunitaire", "emoji": "🛡" },
+    { "id": "intestins", "nom": "Intestins", "emoji": "🌀" },
+    { "id": "voies_resp", "nom": "Voies respiratoires", "emoji": "🫁" },
+    { "id": "peau", "nom": "Peau", "emoji": "🖐️" }
+  ],
+  "humain": { "id": "humain", "nom": "Humain", "emoji": "🧍" },
+  "suggestions_a_ajouter": {
+    "note": "Idées d'extensions restantes pour discussion avec le pharmacien réviseur. Les autres suggestions (naproxène, dimenhydrinate, décongestionnants, dextrométhorphane, laxatifs stimulants, PEG, siméthicone, réhydratation orale, cœur, yeux, muscles, système urinaire, sang) sont maintenant dans contenu_extension.json (non validé).",
+    "elements": {
+      "Médicaments en vente libre": ["Docusate", "Vitamine D / calcium (suppléments)"]
+    }
+  },
+  "combinaisons": [
+    {
+      "id": "acetaminophene-cerveau", "type": "medicament_organe", "elements": ["acetaminophene", "cerveau"],
+      "resultat": "Soulage la douleur légère à modérée et abaisse la fièvre.",
+      "mecanisme": "Agit surtout dans le système nerveux central (dont le centre de la température) en diminuant la production de prostaglandines. Son mécanisme exact n'est pas entièrement élucidé. Il a peu d'effet anti-inflammatoire en périphérie.",
+      "effets_indesirables": "Rarement problématique aux usages recommandés; des réactions cutanées allergiques sont rares mais possibles.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "acetaminophene-foie", "type": "medicament_organe", "elements": ["acetaminophene", "foie"],
+      "resultat": "Le foie est l'organe qui transforme l'acétaminophène; c'est aussi l'organe à protéger.",
+      "mecanisme": "Le foie l'élimine surtout par conjugaison (glucuronidation, sulfatation). Une petite fraction passe par le CYP2E1 et forme un métabolite réactif (NAPQI), normalement neutralisé par le glutathion. Si trop d'acétaminophène est pris, le glutathion s'épuise et le foie peut être endommagé.",
+      "effets_indesirables": "Atteinte hépatique en cas de surconsommation, souvent sans symptômes au début. C'est pourquoi il faut compter l'acétaminophène contenu dans tous les produits (rhume, sommeil, etc.).",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "acetaminophene-estomac", "type": "medicament_organe", "elements": ["acetaminophene", "estomac"],
+      "resultat": "Contrairement aux AINS, il irrite peu la muqueuse de l'estomac.",
+      "mecanisme": "Il n'inhibe pas de façon importante les COX en périphérie, donc ne réduit pas les prostaglandines qui protègent la muqueuse gastrique.",
+      "effets_indesirables": "Troubles gastriques peu fréquents.",
+      "niveau_certitude": "confirme", "source": "SC; manuel de pharmacologie"
+    },
+    {
+      "id": "ibuprofene-estomac", "type": "medicament_organe", "elements": ["ibuprofene", "estomac"],
+      "resultat": "Peut irriter l'estomac et, à risque, causer des ulcères ou des saignements.",
+      "mecanisme": "En inhibant la COX-1, il diminue les prostaglandines qui produisent le mucus protecteur et maintiennent le flux sanguin de la muqueuse.",
+      "effets_indesirables": "Brûlures d'estomac, nausées, douleurs; plus rarement ulcère ou saignement digestif. Le risque est plus élevé chez les personnes âgées ou avec antécédents d'ulcère.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "ibuprofene-reins", "type": "medicament_organe", "elements": ["ibuprofene", "reins"],
+      "resultat": "Peut diminuer la circulation sanguine dans les reins, surtout en situation de vulnérabilité.",
+      "mecanisme": "Les prostaglandines dilatent les vaisseaux qui alimentent les reins. En les réduisant, l'ibuprofène peut diminuer la filtration et faire retenir sel et eau.",
+      "effets_indesirables": "Rétention d'eau, enflure, hausse de la tension artérielle; atteinte rénale possible en cas de déshydratation, de maladie rénale ou chez les personnes âgées.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "ibuprofene-cerveau", "type": "medicament_organe", "elements": ["ibuprofene", "cerveau"],
+      "resultat": "Aide à abaisser la fièvre et à calmer la douleur.",
+      "mecanisme": "Il inhibe les COX et réduit la prostaglandine E2, qui élève le « thermostat » de l'hypothalamus et sensibilise les nerfs de la douleur.",
+      "effets_indesirables": "Maux de tête ou étourdissements occasionnels.",
+      "niveau_certitude": "confirme", "source": "SC; manuel de pharmacologie"
+    },
+    {
+      "id": "aas-estomac", "type": "medicament_organe", "elements": ["aas", "estomac"],
+      "resultat": "Peut irriter la muqueuse gastrique et favoriser les saignements digestifs.",
+      "mecanisme": "L'AAS inhibe de façon irréversible la COX-1, ce qui réduit les prostaglandines protectrices de l'estomac. Il peut aussi irriter directement la muqueuse.",
+      "effets_indesirables": "Brûlures d'estomac, nausées, ulcères et saignements digestifs.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "aas-cerveau", "type": "medicament_organe", "elements": ["aas", "cerveau"],
+      "resultat": "Soulage la douleur et abaisse la fièvre.",
+      "mecanisme": "Inhibition des COX et baisse des prostaglandines, notamment au niveau de l'hypothalamus pour la fièvre.",
+      "effets_indesirables": "Bourdonnements d'oreille (acouphènes) possibles en cas d'exposition élevée.",
+      "niveau_certitude": "confirme", "source": "SC; manuel de pharmacologie"
+    },
+    {
+      "id": "aas-reins", "type": "medicament_organe", "elements": ["aas", "reins"],
+      "resultat": "Comme les autres AINS, peut réduire la fonction rénale chez les personnes vulnérables.",
+      "mecanisme": "La baisse des prostaglandines rénales diminue l'apport sanguin aux reins.",
+      "effets_indesirables": "Rétention d'eau, baisse de la fonction rénale dans certains contextes (déshydratation, maladie rénale).",
+      "niveau_certitude": "confirme", "source": "SC; manuel de pharmacologie"
+    },
+    {
+      "id": "loratadine-immunitaire", "type": "medicament_organe", "elements": ["loratadine", "immunitaire"],
+      "resultat": "Réduit les symptômes d'allergie causés par l'histamine.",
+      "mecanisme": "Antagoniste (bloqueur) des récepteurs H1 de l'histamine : il empêche l'histamine libérée par les mastocytes d'activer ses cibles.",
+      "effets_indesirables": "Maux de tête, bouche sèche, fatigue chez certaines personnes.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "loratadine-cerveau", "type": "medicament_organe", "elements": ["loratadine", "cerveau"],
+      "resultat": "Cause peu de somnolence comparativement aux antihistaminiques de 1re génération.",
+      "mecanisme": "Elle traverse peu la barrière hémato-encéphalique, donc bloque peu les récepteurs H1 du cerveau.",
+      "effets_indesirables": "Somnolence possible mais moins fréquente.",
+      "niveau_certitude": "confirme", "source": "SC; manuel de pharmacologie"
+    },
+    {
+      "id": "loratadine-voies_resp", "type": "medicament_organe", "elements": ["loratadine", "voies_resp"],
+      "resultat": "Soulage éternuements, écoulement nasal et picotements de la rhinite allergique.",
+      "mecanisme": "En bloquant les récepteurs H1 dans la muqueuse nasale, elle réduit la réaction à l'histamine. Elle est moins efficace contre la congestion.",
+      "effets_indesirables": "Sécheresse du nez ou de la gorge possible.",
+      "niveau_certitude": "confirme", "source": "SC; manuel de pharmacologie"
+    },
+    {
+      "id": "loratadine-peau", "type": "medicament_organe", "elements": ["loratadine", "peau"],
+      "resultat": "Aide à réduire les démangeaisons et les plaques de l'urticaire allergique.",
+      "mecanisme": "Blocage des récepteurs H1 de la peau, qui causent rougeur, enflure et démangeaisons.",
+      "effets_indesirables": "Rares éruptions cutanées.",
+      "niveau_certitude": "confirme", "source": "SC; manuel de pharmacologie"
+    },
+    {
+      "id": "loratadine-foie", "type": "medicament_organe", "elements": ["loratadine", "foie"],
+      "resultat": "Le foie transforme la loratadine en un métabolite actif (desloratadine).",
+      "mecanisme": "Métabolisme par des enzymes hépatiques (CYP3A4 et CYP2D6). Une atteinte du foie peut donc changer son élimination.",
+      "effets_indesirables": "À VALIDER : détail des cas d'atteinte hépatique et enzymes exactes à confirmer dans la monographie.",
+      "niveau_certitude": "a_valider", "source": "À VALIDER (DrugBank; monographie Santé Canada)"
+    },
+    {
+      "id": "cetirizine-immunitaire", "type": "medicament_organe", "elements": ["cetirizine", "immunitaire"],
+      "resultat": "Réduit les symptômes d'allergie causés par l'histamine.",
+      "mecanisme": "Antagoniste des récepteurs H1 de l'histamine.",
+      "effets_indesirables": "Somnolence, fatigue, bouche sèche.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "cetirizine-cerveau", "type": "medicament_organe", "elements": ["cetirizine", "cerveau"],
+      "resultat": "Peut causer de la somnolence chez certaines personnes, malgré sa classe « non sédative ».",
+      "mecanisme": "Elle pénètre un peu plus dans le cerveau que la loratadine et occupe certains récepteurs H1 centraux.",
+      "effets_indesirables": "Somnolence, fatigue; prudence au volant jusqu'à connaître sa réaction.",
+      "niveau_certitude": "confirme", "source": "SC; manuel de pharmacologie"
+    },
+    {
+      "id": "cetirizine-reins", "type": "medicament_organe", "elements": ["cetirizine", "reins"],
+      "resultat": "Elle est éliminée en grande partie par les reins.",
+      "mecanisme": "Excrétion rénale surtout sous forme inchangée; une fonction rénale réduite prolonge sa présence dans le corps.",
+      "effets_indesirables": "Plus d'effets (somnolence) possibles si les reins fonctionnent moins bien.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank"
+    },
+    {
+      "id": "diphenhydramine-cerveau", "type": "medicament_organe", "elements": ["diphenhydramine", "cerveau"],
+      "resultat": "Provoque de la somnolence importante, d'où son usage dans certains produits pour le sommeil.",
+      "mecanisme": "Antihistaminique de 1re génération : elle traverse la barrière hémato-encéphalique et bloque les récepteurs H1 et muscariniques (anticholinergiques) du cerveau.",
+      "effets_indesirables": "Somnolence, étourdissements, confusion (surtout chez les aînés), mémoire et vigilance diminuées le lendemain, bouche sèche, vision floue.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "diphenhydramine-immunitaire", "type": "medicament_organe", "elements": ["diphenhydramine", "immunitaire"],
+      "resultat": "Bloque l'effet de l'histamine dans les réactions allergiques.",
+      "mecanisme": "Antagoniste des récepteurs H1 de l'histamine.",
+      "effets_indesirables": "Somnolence et effets anticholinergiques (bouche sèche, rétention urinaire, constipation).",
+      "niveau_certitude": "confirme", "source": "SC; manuel de pharmacologie"
+    },
+    {
+      "id": "diphenhydramine-voies_resp", "type": "medicament_organe", "elements": ["diphenhydramine", "voies_resp"],
+      "resultat": "Peut assécher les sécrétions du nez et de la gorge.",
+      "mecanisme": "Son effet anticholinergique réduit la production de mucus.",
+      "effets_indesirables": "Sécheresse, mucus plus épais possible.",
+      "niveau_certitude": "confirme", "source": "SC; manuel de pharmacologie"
+    },
+    {
+      "id": "famotidine-estomac", "type": "medicament_organe", "elements": ["famotidine", "estomac"],
+      "resultat": "Diminue la production d'acide de l'estomac.",
+      "mecanisme": "Antagoniste des récepteurs H2 des cellules pariétales : ces cellules reçoivent moins le signal de l'histamine qui stimule la sécrétion d'acide.",
+      "effets_indesirables": "Maux de tête, étourdissements, constipation ou diarrhée.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "famotidine-reins", "type": "medicament_organe", "elements": ["famotidine", "reins"],
+      "resultat": "Elle est éliminée en grande partie par les reins.",
+      "mecanisme": "Excrétion rénale importante; une fonction rénale réduite augmente son accumulation.",
+      "effets_indesirables": "À VALIDER : effets neurologiques (confusion) rapportés lors d'insuffisance rénale.",
+      "niveau_certitude": "a_valider", "source": "À VALIDER (monographie Santé Canada)"
+    },
+    {
+      "id": "omeprazole-estomac", "type": "medicament_organe", "elements": ["omeprazole", "estomac"],
+      "resultat": "Réduit fortement la production d'acide de l'estomac.",
+      "mecanisme": "Inhibiteur de la pompe à protons : il bloque de façon irréversible l'enzyme H+/K+ ATPase des cellules pariétales, l'étape finale de la sécrétion d'acide.",
+      "effets_indesirables": "Maux de tête, diarrhée, douleurs abdominales. Un usage prolongé a été associé à de faibles taux de magnésium et de vitamine B12 : d'où l'importance de l'avis d'un pharmacien.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "omeprazole-foie", "type": "medicament_organe", "elements": ["omeprazole", "foie"],
+      "resultat": "Le foie transforme l'oméprazole avant de l'éliminer.",
+      "mecanisme": "Métabolisme surtout par le CYP2C19 (et un peu par le CYP3A4). Cela explique certaines interactions avec d'autres médicaments.",
+      "effets_indesirables": "Hausse passagère des enzymes du foie rapportée rarement.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank"
+    },
+    {
+      "id": "loperamide-intestins", "type": "medicament_organe", "elements": ["loperamide", "intestins"],
+      "resultat": "Ralentit le transit et réduit la diarrhée.",
+      "mecanisme": "Agoniste des récepteurs opioïdes μ de la paroi intestinale : il diminue la motilité et augmente l'absorption d'eau et de sel.",
+      "effets_indesirables": "Constipation, ballonnements, crampes, nausées.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "loperamide-cerveau", "type": "medicament_organe", "elements": ["loperamide", "cerveau"],
+      "resultat": "Aux usages prévus, il n'agit presque pas dans le cerveau, malgré sa parenté avec les opioïdes.",
+      "mecanisme": "Une pompe d'efflux (P-glycoprotéine) l'empêche de franchir la barrière hémato-encéphalique en quantité importante.",
+      "effets_indesirables": "Somnolence ou étourdissements occasionnels. Un mauvais usage peut avoir des effets cardiaques graves : respecter les consignes.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank"
+    },
+    {
+      "id": "loperamide-foie", "type": "medicament_organe", "elements": ["loperamide", "foie"],
+      "resultat": "Le foie en élimine une grande part avant qu'il n'atteigne la circulation générale.",
+      "mecanisme": "Important métabolisme de premier passage hépatique : très peu de lopéramide atteint le sang sous forme active.",
+      "effets_indesirables": "À VALIDER : précautions en cas d'atteinte hépatique.",
+      "niveau_certitude": "a_valider", "source": "À VALIDER (monographie Santé Canada)"
+    },
+    {
+      "id": "carbonate_calcium-estomac", "type": "medicament_organe", "elements": ["carbonate_calcium", "estomac"],
+      "resultat": "Neutralise rapidement l'acide et soulage les brûlures d'estomac.",
+      "mecanisme": "Réaction chimique directe : le carbonate de calcium neutralise l'acide chlorhydrique (HCl) et forme du chlorure de calcium, de l'eau et du CO₂.",
+      "effets_indesirables": "Constipation, gaz, ballonnements. Effet de courte durée.",
+      "niveau_certitude": "confirme", "source": "SC; manuel de pharmacologie"
+    },
+    {
+      "id": "carbonate_calcium-reins", "type": "medicament_organe", "elements": ["carbonate_calcium", "reins"],
+      "resultat": "Un excès de calcium peut poser problème aux reins chez les personnes à risque.",
+      "mecanisme": "Le calcium absorbé est éliminé en partie par les reins; un excès peut causer une hausse du calcium sanguin et favoriser des calculs.",
+      "effets_indesirables": "Hypercalcémie, calculs rénaux (surtout avec usage excessif ou prolongé).",
+      "niveau_certitude": "confirme", "source": "SC; manuel de pharmacologie"
+    },
+    {
+      "id": "carbonate_calcium-intestins", "type": "medicament_organe", "elements": ["carbonate_calcium", "intestins"],
+      "resultat": "Peut ralentir le transit et causer de la constipation.",
+      "mecanisme": "Les sels de calcium non absorbés peuvent durcir les selles et diminuer la motilité.",
+      "effets_indesirables": "Constipation, ballonnements.",
+      "niveau_certitude": "confirme", "source": "SC; manuel de pharmacologie"
+    },
+    {
+      "id": "guaifenesine-voies_resp", "type": "medicament_organe", "elements": ["guaifenesine", "voies_resp"],
+      "resultat": "Aide à rendre la toux plus « productive » en facilitant l'expulsion des sécrétions.",
+      "mecanisme": "Expectorant : on pense qu'il augmente le volume et diminue la viscosité des sécrétions bronchiques, mais le mécanisme exact et l'efficacité clinique restent débattus.",
+      "effets_indesirables": "Nausées, maux d'estomac, étourdissements (rares).",
+      "niveau_certitude": "a_valider", "source": "À VALIDER (monographie Santé Canada; DrugBank)"
+    },
+    {
+      "id": "hydrocortisone-peau", "type": "medicament_organe", "elements": ["hydrocortisone", "peau"],
+      "resultat": "Calme rougeurs, enflure et démangeaisons de certaines inflammations de la peau (ex. eczéma léger, piqûres).",
+      "mecanisme": "Corticostéroïde : se lie aux récepteurs des glucocorticoïdes et diminue l'expression de gènes inflammatoires (moins de cytokines et de prostaglandines).",
+      "effets_indesirables": "Irritation, et avec un usage prolongé : amincissement de la peau, vergetures. L'absorption est plus grande sur le visage et les plis.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "hydrocortisone-immunitaire", "type": "medicament_organe", "elements": ["hydrocortisone", "immunitaire"],
+      "resultat": "Freine localement la réponse immunitaire qui cause l'inflammation.",
+      "mecanisme": "Réduit l'activité des cellules immunitaires et la libération de médiateurs inflammatoires là où il est appliqué.",
+      "effets_indesirables": "Sur une infection de la peau, il peut en masquer ou aggraver les signes : d'où l'avis d'un pharmacien.",
+      "niveau_certitude": "confirme", "source": "SC; manuel de pharmacologie"
+    },
+
+    {
+      "id": "acetaminophene-reins", "type": "medicament_organe", "elements": ["acetaminophene", "reins"],
+      "resultat": "Effet rénal limité aux usages habituels.",
+      "mecanisme": "Contrairement aux AINS, il perturbe peu le flux sanguin rénal dépendant des prostaglandines. Une utilisation chronique et prolongée a été associée à des atteintes rénales dans certaines études.",
+      "effets_indesirables": "Le risque est surtout lié à une exposition prolongée ou à la surconsommation. À VALIDER.",
+      "niveau_certitude": "a_valider", "source": "À VALIDER (monographie Santé Canada)"
+    },
+    {
+      "id": "ibuprofene-immunitaire", "type": "medicament_organe", "elements": ["ibuprofene", "immunitaire"],
+      "resultat": "Réduit l'inflammation sans « éteindre » l'immunité.",
+      "mecanisme": "Il diminue les prostaglandines qui amplifient la rougeur, la chaleur et le gonflement, mais n'est pas un immunosuppresseur.",
+      "effets_indesirables": "Réactions allergiques rares (éruptions, enflure).",
+      "niveau_certitude": "confirme", "source": "Manuel de pharmacologie (Goodman & Gilman); SC"
+    },
+    {
+      "id": "ibuprofene-voies_resp", "type": "medicament_organe", "elements": ["ibuprofene", "voies_resp"],
+      "resultat": "Peut déclencher de l'asthme chez certaines personnes sensibles aux AINS.",
+      "mecanisme": "Chez certaines personnes asthmatiques, le blocage de la COX-1 déséquilibre la production de médiateurs (leucotriènes) et provoque un resserrement des bronches.",
+      "effets_indesirables": "Sifflements, toux, difficulté à respirer chez les personnes sensibles aux AINS.",
+      "niveau_certitude": "confirme", "source": "SC; manuel de pharmacologie"
+    },
+    {
+      "id": "aas-immunitaire", "type": "medicament_organe", "elements": ["aas", "immunitaire"],
+      "resultat": "Réduit l'inflammation et agit sur les plaquettes du sang.",
+      "mecanisme": "En bloquant la COX-1 des plaquettes, il diminue le thromboxane A2 et donc l'agrégation plaquettaire pour toute la vie des plaquettes (7 à 10 jours environ).",
+      "effets_indesirables": "Saignements plus faciles (ecchymoses, saignements de nez).",
+      "niveau_certitude": "confirme", "source": "Manuel de pharmacologie (Goodman & Gilman); DrugBank"
+    },
+    {
+      "id": "aas-voies_resp", "type": "medicament_organe", "elements": ["aas", "voies_resp"],
+      "resultat": "Peut aggraver l'asthme chez les personnes sensibles aux AINS.",
+      "mecanisme": "Chez certaines personnes, le blocage des COX favorise la production de leucotriènes qui resserrent les bronches.",
+      "effets_indesirables": "Sifflements, congestion nasale, polypes nasaux chez les personnes sensibles.",
+      "niveau_certitude": "confirme", "source": "SC; manuel de pharmacologie"
+    },
+    {
+      "id": "cetirizine-voies_resp", "type": "medicament_organe", "elements": ["cetirizine", "voies_resp"],
+      "resultat": "Soulage éternuements, écoulement nasal et larmoiement de la rhinite allergique.",
+      "mecanisme": "Le blocage des récepteurs H1 de la muqueuse nasale limite l'effet de l'histamine. Elle est peu efficace contre la congestion nasale.",
+      "effets_indesirables": "Somnolence, sécheresse de la bouche ou du nez.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank"
+    },
+    {
+      "id": "cetirizine-peau", "type": "medicament_organe", "elements": ["cetirizine", "peau"],
+      "resultat": "Soulage l'urticaire et les démangeaisons allergiques.",
+      "mecanisme": "Le blocage des récepteurs H1 de la peau limite l'effet de l'histamine (rougeur, papules, démangeaisons).",
+      "effets_indesirables": "Rares éruptions.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank"
+    },
+    {
+      "id": "diphenhydramine-intestins", "type": "medicament_organe", "elements": ["diphenhydramine", "intestins"],
+      "resultat": "Peut ralentir le transit intestinal.",
+      "mecanisme": "Son effet anticholinergique diminue les contractions du tube digestif et les sécrétions.",
+      "effets_indesirables": "Constipation, bouche sèche, difficulté à uriner.",
+      "niveau_certitude": "confirme", "source": "Manuel de pharmacologie (Goodman & Gilman); DrugBank"
+    },
+    {
+      "id": "famotidine-cerveau", "type": "medicament_organe", "elements": ["famotidine", "cerveau"],
+      "resultat": "Effets neurologiques rares.",
+      "mecanisme": "Elle passe peu dans le cerveau, mais si elle s'accumule (fonction rénale réduite), des effets centraux peuvent apparaître.",
+      "effets_indesirables": "Confusion, agitation ou somnolence, rarement. À VALIDER.",
+      "niveau_certitude": "a_valider", "source": "À VALIDER (monographie Santé Canada)"
+    },
+    {
+      "id": "omeprazole-intestins", "type": "medicament_organe", "elements": ["omeprazole", "intestins"],
+      "resultat": "Moins d'acide : absorption modifiée de certains nutriments.",
+      "mecanisme": "Un pH gastrique plus élevé peut diminuer l'absorption de la vitamine B12, du fer, du calcium (sous forme de carbonate) et du magnésium lors d'une utilisation prolongée.",
+      "effets_indesirables": "Risque accru de certaines infections digestives; carences possibles à long terme.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank"
+    },
+    {
+      "id": "guaifenesine-estomac", "type": "medicament_organe", "elements": ["guaifenesine", "estomac"],
+      "resultat": "Peut irriter l'estomac et causer des nausées.",
+      "mecanisme": "Hypothèse : l'effet expectorant passerait en partie par une stimulation de la muqueuse gastrique (réflexe gastro-pulmonaire), ce qui expliquerait les nausées. À VALIDER.",
+      "effets_indesirables": "Nausées, inconfort gastrique.",
+      "niveau_certitude": "a_valider", "source": "À VALIDER (monographie Santé Canada)"
+    },
+    {
+      "id": "ibuprofene-aas", "type": "medicament_medicament", "elements": ["ibuprofene", "aas"],
+      "resultat": "RISQUE : deux AINS ensemble augmentent le risque de saignement et d'irritation digestive. De plus, l'ibuprofène peut gêner l'effet antiplaquettaire de l'AAS à faible dose.",
+      "mecanisme": "Les deux inhibent la COX-1 (effets additifs sur la muqueuse et les plaquettes). L'ibuprofène peut occuper le site de liaison de l'AAS sur la COX-1 et réduire sa protection cardiovasculaire.",
+      "effets_indesirables": "Saignements digestifs, ulcères.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank"
+    },
+    {
+      "id": "acetaminophene-ibuprofene", "type": "medicament_medicament", "elements": ["acetaminophene", "ibuprofene"],
+      "resultat": "Aucune interaction notable connue entre les deux.",
+      "mecanisme": "Mécanismes et voies d'élimination différents : pas de compétition importante. Chacun garde ses propres risques (foie pour l'un, estomac et reins pour l'autre). Demandez conseil à un pharmacien avant de les associer.",
+      "effets_indesirables": "Ceux de chaque médicament.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank"
+    },
+    {
+      "id": "acetaminophene-aas", "type": "medicament_medicament", "elements": ["acetaminophene", "aas"],
+      "resultat": "Aucune interaction pharmacocinétique majeure connue, mais risque de duplication d'analgésiques.",
+      "mecanisme": "Différents mécanismes. Attention aux produits combinés qui contiennent déjà l'un ou l'autre.",
+      "effets_indesirables": "À VALIDER : précisions sur les associations prolongées.",
+      "niveau_certitude": "a_valider", "source": "À VALIDER (monographies Santé Canada)"
+    },
+    {
+      "id": "acetaminophene-diphenhydramine", "type": "medicament_medicament", "elements": ["acetaminophene", "diphenhydramine"],
+      "resultat": "Aucune interaction notable; on les retrouve ensemble dans certains produits pour le sommeil.",
+      "mecanisme": "Pas de voie métabolique commune importante. Il faut tout de même éviter le double usage d'acétaminophène dans différents produits.",
+      "effets_indesirables": "Ceux de chaque médicament (somnolence pour la diphénhydramine).",
+      "niveau_certitude": "confirme", "source": "SC"
+    },
+    {
+      "id": "ibuprofene-omeprazole", "type": "medicament_medicament", "elements": ["ibuprofene", "omeprazole"],
+      "resultat": "SYNERGIE protectrice : l'oméprazole peut réduire le risque d'ulcère causé par les AINS.",
+      "mecanisme": "L'ibuprofène diminue la protection de la muqueuse; l'oméprazole réduit l'acide qui l'attaque.",
+      "effets_indesirables": "Ceux de chaque médicament.",
+      "niveau_certitude": "confirme", "source": "DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "ibuprofene-famotidine", "type": "medicament_medicament", "elements": ["ibuprofene", "famotidine"],
+      "resultat": "SYNERGIE protectrice : la famotidine peut réduire le risque d'ulcère lié aux AINS.",
+      "mecanisme": "Moins d'acide gastrique pour attaquer une muqueuse affaiblie par l'ibuprofène. Une association ibuprofène-famotidine existe en produit commercial.",
+      "effets_indesirables": "Ceux de chaque médicament.",
+      "niveau_certitude": "confirme", "source": "DrugBank"
+    },
+    {
+      "id": "aas-famotidine", "type": "medicament_medicament", "elements": ["aas", "famotidine"],
+      "resultat": "Protection partielle possible de l'estomac contre l'irritation de l'AAS.",
+      "mecanisme": "La réduction de l'acide pourrait diminuer le risque d'ulcère, mais la protection est moins bien établie que pour les inhibiteurs de la pompe à protons.",
+      "effets_indesirables": "À VALIDER.",
+      "niveau_certitude": "a_valider", "source": "À VALIDER (manuel de pharmacologie)"
+    },
+    {
+      "id": "aas-carbonate_calcium", "type": "medicament_medicament", "elements": ["aas", "carbonate_calcium"],
+      "resultat": "Les antiacides pourraient modifier l'élimination ou l'absorption de l'AAS.",
+      "mecanisme": "À VALIDER : un pH plus alcalin pourrait augmenter l'élimination urinaire des salicylates.",
+      "effets_indesirables": "À VALIDER.",
+      "niveau_certitude": "a_valider", "source": "À VALIDER (DrugBank; monographie Santé Canada)"
+    },
+    {
+      "id": "loratadine-cetirizine", "type": "medicament_medicament", "elements": ["loratadine", "cetirizine"],
+      "resultat": "RISQUE de duplication : deux antihistaminiques de la même classe n'apportent pas de bénéfice et additionnent les effets indésirables.",
+      "mecanisme": "Les deux bloquent les mêmes récepteurs H1.",
+      "effets_indesirables": "Somnolence, bouche sèche, fatigue plus marquées.",
+      "niveau_certitude": "confirme", "source": "MAN; SC"
+    },
+    {
+      "id": "diphenhydramine-cetirizine", "type": "medicament_medicament", "elements": ["diphenhydramine", "cetirizine"],
+      "resultat": "RISQUE de duplication : somnolence et effets anticholinergiques additionnés.",
+      "mecanisme": "Deux antihistaminiques H1; la diphénhydramine ajoute un effet sédatif et anticholinergique important.",
+      "effets_indesirables": "Somnolence marquée, confusion, bouche sèche, rétention urinaire.",
+      "niveau_certitude": "confirme", "source": "MAN; SC"
+    },
+    {
+      "id": "diphenhydramine-loratadine", "type": "medicament_medicament", "elements": ["diphenhydramine", "loratadine"],
+      "resultat": "RISQUE de duplication : deux antihistaminiques H1 sans bénéfice ajouté et avec plus d'effets indésirables.",
+      "mecanisme": "Blocage des mêmes récepteurs H1; la diphénhydramine ajoute de la sédation.",
+      "effets_indesirables": "Somnolence, bouche sèche.",
+      "niveau_certitude": "confirme", "source": "MAN; SC"
+    },
+    {
+      "id": "famotidine-omeprazole", "type": "medicament_medicament", "elements": ["famotidine", "omeprazole"],
+      "resultat": "Redondance : les deux diminuent l'acide par des voies différentes; cette association doit être décidée par un professionnel de la santé.",
+      "mecanisme": "La famotidine bloque le signal histaminique; l'oméprazole bloque la pompe finale. Leur usage combiné en vente libre n'est pas courant.",
+      "effets_indesirables": "À VALIDER.",
+      "niveau_certitude": "a_valider", "source": "À VALIDER (manuel de pharmacologie)"
+    },
+    {
+      "id": "omeprazole-carbonate_calcium", "type": "medicament_medicament", "elements": ["omeprazole", "carbonate_calcium"],
+      "resultat": "Moins d'acide dans l'estomac peut réduire l'absorption du calcium issu du carbonate de calcium.",
+      "mecanisme": "Le carbonate de calcium a besoin d'un milieu acide pour se dissoudre et être absorbé. Le citrate de calcium en dépend moins.",
+      "effets_indesirables": "Moins d'efficacité comme supplément de calcium.",
+      "niveau_certitude": "confirme", "source": "DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "famotidine-carbonate_calcium", "type": "medicament_medicament", "elements": ["famotidine", "carbonate_calcium"],
+      "resultat": "À VALIDER : interaction possible sur l'absorption; les deux sont parfois utilisés pour des symptômes semblables.",
+      "mecanisme": "À VALIDER : les antiacides pourraient réduire légèrement l'absorption de la famotidine.",
+      "effets_indesirables": "À VALIDER.",
+      "niveau_certitude": "a_valider", "source": "À VALIDER (monographie Santé Canada)"
+    },
+    {
+      "id": "loratadine-carbonate_calcium", "type": "medicament_medicament", "elements": ["loratadine", "carbonate_calcium"],
+      "resultat": "Aucune interaction notable connue.",
+      "mecanisme": "À VALIDER : pas de voie commune importante identifiée.",
+      "effets_indesirables": "Ceux de chaque médicament.",
+      "niveau_certitude": "a_valider", "source": "À VALIDER (monographie Santé Canada)"
+    },
+
+    {
+      "id": "aas-omeprazole", "type": "medicament_medicament", "elements": ["aas", "omeprazole"],
+      "resultat": "SYNERGIE protectrice pour l'estomac.",
+      "mecanisme": "En réduisant l'acide, l'oméprazole diminue le risque de lésion gastrique causée par l'AAS; cette association est utilisée en milieu clinique chez les personnes à risque.",
+      "effets_indesirables": "Ceux de chaque médicament.",
+      "niveau_certitude": "confirme", "source": "DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "ibuprofene-hydrocortisone", "type": "medicament_medicament", "elements": ["ibuprofene", "hydrocortisone"],
+      "resultat": "Aucune interaction notable en usage topique.",
+      "mecanisme": "L'hydrocortisone topique est très peu absorbée. L'association de corticostéroïdes pris par voie générale avec des AINS augmente le risque gastrique, mais pas la crème appliquée sur la peau. À VALIDER.",
+      "effets_indesirables": "Ceux de chaque médicament.",
+      "niveau_certitude": "a_valider", "source": "À VALIDER (monographies Santé Canada)"
+    },
+    {
+      "id": "diphenhydramine-loperamide", "type": "medicament_medicament", "elements": ["diphenhydramine", "loperamide"],
+      "resultat": "RISQUE possible : ralentissement digestif additionné. À VALIDER.",
+      "mecanisme": "La diphénhydramine (anticholinergique) et le lopéramide ralentissent tous deux le transit intestinal, ce qui peut aggraver la constipation.",
+      "effets_indesirables": "Constipation, ballonnements.",
+      "niveau_certitude": "a_valider", "source": "À VALIDER (monographies Santé Canada)"
+    },
+    {
+      "id": "carbonate_calcium-ibuprofene", "type": "medicament_medicament", "elements": ["carbonate_calcium", "ibuprofene"],
+      "resultat": "Aucune interaction notable connue.",
+      "mecanisme": "Pas d'interaction pharmacocinétique significative décrite. L'antiacide ne prévient pas de façon fiable l'irritation gastrique causée par l'AINS. À VALIDER.",
+      "effets_indesirables": "Ceux de chaque médicament.",
+      "niveau_certitude": "a_valider", "source": "À VALIDER (monographies Santé Canada)"
+    },
+    {
+      "id": "diphenhydramine-guaifenesine", "type": "medicament_medicament", "elements": ["diphenhydramine", "guaifenesine"],
+      "resultat": "Pas d'interaction notable connue, mais des effets qui vont dans des directions opposées.",
+      "mecanisme": "On les trouve parfois ensemble dans des produits contre le rhume; la diphénhydramine peut assécher et épaissir les sécrétions, ce qui va à l'encontre de l'effet recherché de la guaïfénésine. À VALIDER.",
+      "effets_indesirables": "Ceux de chaque médicament.",
+      "niveau_certitude": "a_valider", "source": "À VALIDER (monographies Santé Canada)"
+    },
+    {
+      "id": "acetaminophene-humain", "type": "medicament_humain", "elements": ["acetaminophene", "humain"],
+      "resultat": "Profil global : analgésique et antipyrétique de première intention, bien toléré aux usages recommandés, mais le foie est le point de vigilance.",
+      "mecanisme": "Diminue les prostaglandines dans le système nerveux central; éliminé surtout par le foie.",
+      "effets_indesirables": "Rares aux usages recommandés (éruption cutanée). Atteinte hépatique grave en cas de surconsommation.",
+      "interactions": "Alcool en grande quantité et certains médicaments (ex. warfarine en usage régulier, certains antiépileptiques) : À VALIDER par un pharmacien. Attention aux produits combinés.",
+      "populations_a_risque": "Maladie du foie, consommation importante d'alcool, dénutrition. Dosage adapté chez l'enfant : demander au pharmacien.",
+      "niveau_certitude": "a_valider", "source": "SC; DrugBank (interactions à valider)"
+    },
+    {
+      "id": "ibuprofene-humain", "type": "medicament_humain", "elements": ["ibuprofene", "humain"],
+      "resultat": "Profil global : anti-inflammatoire, analgésique et antipyrétique; points de vigilance : estomac, reins, tension artérielle.",
+      "mecanisme": "Inhibition non sélective des COX-1 et COX-2, donc moins de prostaglandines.",
+      "effets_indesirables": "Irritation gastrique, saignement digestif, rétention d'eau, hausse de la tension; rarement réaction allergique ou crise d'asthme chez les personnes sensibles aux AINS.",
+      "interactions": "Autres AINS et AAS (saignement), anticoagulants (saignement), médicaments pour la tension et diurétiques (effet rénal), lithium et méthotrexate (à valider selon le cas).",
+      "populations_a_risque": "Ulcère ou saignement digestif, maladie rénale, insuffisance cardiaque, hypertension non contrôlée, grossesse (surtout 3e trimestre), déshydratation, aînés.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "aas-humain", "type": "medicament_humain", "elements": ["aas", "humain"],
+      "resultat": "Profil global : analgésique, antipyrétique, anti-inflammatoire et antiplaquettaire irréversible.",
+      "mecanisme": "Acétylation irréversible de la COX : les plaquettes ne peuvent plus fabriquer de thromboxane A2 pendant leur vie (environ 7 à 10 jours).",
+      "effets_indesirables": "Irritation gastrique, saignements, acouphènes, réactions allergiques ou bronchospasme chez des personnes sensibles.",
+      "interactions": "Autres AINS, anticoagulants, certains antidépresseurs (ISRS) : risque de saignement accru. Alcool : irritation gastrique accrue.",
+      "populations_a_risque": "Enfants et adolescents avec infection virale (risque de syndrome de Reye : éviter sans avis), troubles de saignement, ulcère, asthme sensible à l'AAS, grossesse, chirurgie prévue.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "loratadine-humain", "type": "medicament_humain", "elements": ["loratadine", "humain"],
+      "resultat": "Profil global : antihistaminique peu sédatif contre rhinite allergique et urticaire.",
+      "mecanisme": "Blocage sélectif des récepteurs H1 périphériques; transformation hépatique en desloratadine.",
+      "effets_indesirables": "Maux de tête, fatigue, bouche sèche; somnolence moins fréquente.",
+      "interactions": "À VALIDER : certains médicaments qui inhibent le CYP3A4 ou le CYP2D6 peuvent augmenter son taux.",
+      "populations_a_risque": "Maladie du foie ou des reins (ajustement possible), grossesse et allaitement : demander un avis.",
+      "niveau_certitude": "a_valider", "source": "SC; DrugBank (interactions à valider)"
+    },
+    {
+      "id": "cetirizine-humain", "type": "medicament_humain", "elements": ["cetirizine", "humain"],
+      "resultat": "Profil global : antihistaminique H1 efficace, avec un risque de somnolence plus élevé que la loratadine.",
+      "mecanisme": "Antagoniste H1; élimination surtout rénale.",
+      "effets_indesirables": "Somnolence, fatigue, bouche sèche, maux de tête.",
+      "interactions": "Alcool et autres dépresseurs du système nerveux central : somnolence accrue.",
+      "populations_a_risque": "Insuffisance rénale (ajustement possible), conduite de véhicule ou tâches de vigilance.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank"
+    },
+    {
+      "id": "diphenhydramine-humain", "type": "medicament_humain", "elements": ["diphenhydramine", "humain"],
+      "resultat": "Profil global : antihistaminique sédatif et anticholinergique; à utiliser avec prudence, surtout chez les aînés.",
+      "mecanisme": "Bloque les récepteurs H1 et muscariniques, y compris dans le cerveau.",
+      "effets_indesirables": "Somnolence, confusion, bouche sèche, vision floue, constipation, rétention urinaire, étourdissements.",
+      "interactions": "Alcool, sédatifs et autres anticholinergiques : effets additifs. Certains médicaments métabolisés par le CYP2D6 : à valider.",
+      "populations_a_risque": "Aînés (chutes, confusion), glaucome à angle fermé, hypertrophie de la prostate, asthme, jeunes enfants. Éviter la conduite.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "famotidine-humain", "type": "medicament_humain", "elements": ["famotidine", "humain"],
+      "resultat": "Profil global : réduit l'acidité gastrique pour les brûlures d'estomac occasionnelles.",
+      "mecanisme": "Antagoniste des récepteurs H2 des cellules pariétales.",
+      "effets_indesirables": "Maux de tête, étourdissements, constipation ou diarrhée.",
+      "interactions": "Peut modifier l'absorption de médicaments qui exigent un milieu acide (ex. certains antifongiques et antiviraux) : À VALIDER.",
+      "populations_a_risque": "Insuffisance rénale; des symptômes persistants ou des signes d'alarme demandent une évaluation médicale.",
+      "niveau_certitude": "a_valider", "source": "SC; DrugBank (interactions à valider)"
+    },
+    {
+      "id": "omeprazole-humain", "type": "medicament_humain", "elements": ["omeprazole", "humain"],
+      "resultat": "Profil global : inhibiteur puissant de l'acide gastrique, conçu pour un traitement de durée limitée en vente libre.",
+      "mecanisme": "Blocage irréversible de la pompe à protons des cellules pariétales; métabolisé par le CYP2C19.",
+      "effets_indesirables": "Maux de tête, diarrhée, douleurs abdominales, nausées. Usage prolongé : bas taux de magnésium ou de vitamine B12, risque accru de fractures et d'infections digestives (à valider).",
+      "interactions": "Clopidogrel (réduction possible de l'effet, via CYP2C19), certains antirétroviraux, méthotrexate, médicaments dont l'absorption dépend de l'acidité : À VALIDER.",
+      "populations_a_risque": "Maladie du foie, usage prolongé, symptômes d'alarme (difficulté à avaler, perte de poids, selles noires) : consulter.",
+      "niveau_certitude": "a_valider", "source": "SC; DrugBank (détails à valider)"
+    },
+    {
+      "id": "loperamide-humain", "type": "medicament_humain", "elements": ["loperamide", "humain"],
+      "resultat": "Profil global : traitement symptomatique de la diarrhée; il ne traite pas la cause.",
+      "mecanisme": "Agoniste des récepteurs opioïdes μ de l'intestin; peu d'effet central grâce à la P-glycoprotéine.",
+      "effets_indesirables": "Constipation, ballonnements, crampes, étourdissements. Des troubles du rythme cardiaque graves sont rapportés lors de mauvais usage : respecter les consignes.",
+      "interactions": "Certains médicaments qui inhibent la P-gp ou le CYP3A4/CYP2C8 (ex. quinidine, ritonavir, gemfibrozil) peuvent augmenter son taux : À VALIDER.",
+      "populations_a_risque": "Diarrhée avec fièvre ou sang dans les selles, jeunes enfants, maladie inflammatoire de l'intestin active : demander l'avis d'un pharmacien ou d'un médecin.",
+      "niveau_certitude": "a_valider", "source": "SC; DrugBank (interactions à valider)"
+    },
+    {
+      "id": "carbonate_calcium-humain", "type": "medicament_humain", "elements": ["carbonate_calcium", "humain"],
+      "resultat": "Profil global : antiacide à action rapide et aussi source de calcium.",
+      "mecanisme": "Neutralisation de l'acide gastrique; une partie du calcium est absorbée.",
+      "effets_indesirables": "Constipation, gaz, ballonnements; excès : hypercalcémie, calculs rénaux.",
+      "interactions": "Peut diminuer l'absorption de certains médicaments (ex. quinolones, tétracyclines, lévothyroxine, fer) si pris en même temps : espacer selon avis du pharmacien.",
+      "populations_a_risque": "Maladie rénale, antécédents de calculs, hypercalcémie.",
+      "niveau_certitude": "confirme", "source": "SC; DrugBank; manuel de pharmacologie"
+    },
+    {
+      "id": "guaifenesine-humain", "type": "medicament_humain", "elements": ["guaifenesine", "humain"],
+      "resultat": "Profil global : expectorant utilisé pour la toux grasse; bénéfice clinique modeste et débattu.",
+      "mecanisme": "Pourrait fluidifier les sécrétions bronchiques; mécanisme exact à valider.",
+      "effets_indesirables": "Nausées, vomissements, étourdissements, maux de tête (peu fréquents).",
+      "interactions": "Aucune interaction majeure connue : À VALIDER. Attention aux produits combinés (décongestionnants, antitussifs).",
+      "populations_a_risque": "Toux persistante, avec fièvre ou essoufflement, asthme, jeunes enfants : consulter.",
+      "niveau_certitude": "a_valider", "source": "À VALIDER (monographie Santé Canada)"
+    },
+    {
+      "id": "hydrocortisone-humain", "type": "medicament_humain", "elements": ["hydrocortisone", "humain"],
+      "resultat": "Profil global : corticostéroïde topique de faible puissance pour les inflammations cutanées légères.",
+      "mecanisme": "Se lie aux récepteurs des glucocorticoïdes et réduit les signaux inflammatoires locaux.",
+      "effets_indesirables": "Irritation, amincissement de la peau, vergetures, acné ou infection masquée avec usage prolongé; effets généraux possibles si grandes surfaces ou longue durée.",
+      "interactions": "Peu d'interactions systémiques aux usages courts; d'autres produits topiques appliqués au même endroit : À VALIDER.",
+      "populations_a_risque": "Infections de la peau (virales, fongiques, bactériennes), peau lésée, visage et plis cutanés, jeunes enfants, grossesse : demander un avis.",
+      "niveau_certitude": "a_valider", "source": "SC; DrugBank (détails à valider)"
+    }
+  ]
+}
